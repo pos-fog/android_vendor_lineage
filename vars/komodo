@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP3A.251105.015"
+readonly build_id="BP4A.260205.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14339231"
+readonly build_number="14624737"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/komodo-bp3a.251105.015-factory-385774fa.zip"
-readonly image_sha256="385774faffcd3b1a6be07ffd9568f94c2bf1e4616d1d2bad7b54772ebd605331"
+readonly image_url="https://dl.google.com/dl/android/aosp/komodo-bp4a.260205.002-factory-aaec4834.zip"
+readonly image_sha256="aaec48342537c9d0e8beb8cb9d57a64296ca7f171eb4641e4251312b8c3c469b"
 
-readonly flash_url="https://flash.android.com/build/14339231?target=komodo-user&signed"
+readonly flash_url="https://flash.android.com/build/14624737?target=komodo-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/komodo-ota-bp3a.251105.015-15097b7d.zip"
-readonly ota_sha256="15097b7da985540f623cfd32cce8912851e6b4e650ef4fe61369c67a68b7cc70"
+readonly ota_url="https://dl.google.com/dl/android/aosp/komodo-ota-bp4a.260205.002-de3f0636.zip"
+readonly ota_sha256="de3f063655cc0944dca97b2560556198259d97ec673e73b1a75ad20fa3fd64fc"
