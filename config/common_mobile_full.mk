@@ -3,11 +3,9 @@ $(call inherit-product, vendor/lineage/config/common_mobile.mk)
 
 PRODUCT_SIZE := full
 
-# Include {GoogleSansFlex,Lato,Rubik} fonts
+# Include GoogleSansFlex font
 ifeq ($(LINEAGE_BUILD),true)
 $(call inherit-product-if-exists, external/google-fonts/google-sans-flex/fonts.mk)
-$(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
-$(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 endif
 
 # Apps
@@ -41,9 +39,7 @@ PRODUCT_PACKAGES += \
 ifeq ($(LINEAGE_BUILD),true)
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
-    FontGoogleSansFlexOverlay \
-    FontLatoOverlay \
-    FontRubikOverlay
+    FontGoogleSansFlexOverlay
 endif
 
 # Include Lineage LatinIME dictionaries
