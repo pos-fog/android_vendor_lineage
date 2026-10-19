@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
 ifeq ($(LINEAGE_BUILD),true)
 PRODUCT_PACKAGES += \
     Backgrounds \
+    Canvas \
     Glimpse
 endif
 
@@ -52,6 +53,14 @@ PRODUCT_PACKAGES += \
     lineage_charger_animation \
     lineage_charger_animation_vendor
 endif
+
+# Credential storage
+PRODUCT_PACKAGES += \
+    android.software.credentials.prebuilt.xml
+
+# Freeform window management
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.freeform_window_management.xml
 
 # Legal
 PRODUCT_PRODUCT_PROPERTIES += \
